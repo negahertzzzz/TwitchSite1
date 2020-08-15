@@ -16,10 +16,10 @@
         height: 720,
         channel: "pow3rtv",
         layout: "video-with-chat",
-        autoplay: false
+        autoplay: true
       });
 
-      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+      embed.addEventListener(Twitch.Embed.VIDEO_PLAY, () => {
         var player = embed.getPlayer();
         player.play();
       });
